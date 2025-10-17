@@ -8,12 +8,6 @@ This server acts as an expert OpenSCAD reference and project assistant, providin
 
 ## Features
 
-### File System Tools
-- **`list_files(file_extension)`** - View directory contents with OpenSCAD file highlighting
-- **`read_file(filename)`** - Read files to understand current project state
-- **`write_file(filename, content, overwrite)`** - Create or update files with safety checks
-- **`append_to_file(filename, content)`** - Add content to existing files
-
 ### Comprehensive OpenSCAD Knowledge
 - **`get_scad_syntax()`** - Complete language syntax, rules, and flow control
 - **`get_scad_reference(category)`** - Detailed reference by category:
@@ -121,7 +115,7 @@ docker build -t openscad-mcp-server .
             "-i",
             "--rm",
             "-v", "/var/run/docker.sock:/var/run/docker.sock",
-            "-v", "/Users/your_username/.docker/mcp:/mcp",
+            "-v", "C:/Users/your_username/.docker/mcp:/mcp",
             "docker/mcp-gateway",
             "--catalog=/mcp/catalogs/docker-mcp.yaml",
             "--catalog=/mcp/catalogs/custom.yaml",
