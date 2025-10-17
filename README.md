@@ -73,10 +73,6 @@ docker build -t openscad-mcp-server .
         upstream: ""
         icon: ""
         tools:
-          - name: list_files
-          - name: read_file
-          - name: write_file
-          - name: append_to_file
           - name: get_scad_syntax
           - name: get_scad_reference
           - name: scad_quick_help
